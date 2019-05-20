@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<meta charset="utf-8">
+	<meta content="application-name" content="Actividad 26">
+	<meta name="description" content="Estancia en CONALEP">
+	<meta name="keywords" content="Jesús, LGZús, Estancia, Conalep">
+	<meta name="author" content="JGG, lgzus01@protonmail.com">
+	<meta name="copyright" content="CONALEP 153">
+	<title> P R O M E D I O S </title>
+</head>
+<body>
+	<script>
+		//Declaramos la variable de el promedio
+		var prom=prompt("Introduce tu promedio");
+
+		//Comprobamos que sea un numero
+		if(Number(prom)==prom){
+			if((prom>=0) && (prom<3)){
+				document.write("Muy deficiente compa");
+			}else if ((prom>=3) && (prom<5)) {
+				document.write("Insuficiente");
+			}else if ((prom>=5) && (prom<6)) {
+				document.write("Suficiente");
+			}else if ((prom>=6) && (prom<7)) {
+				document.write("Bien");
+			}else if ((prom>=7) && (prom<9)) {
+				document.write("Notable");
+			}else if ((prom>=9) && (prom<=10)) {
+				document.write("Sobresaliente");
+			}
+		}else{
+			alert("Introduce un número válido");
+		}
+
+	</script>
+</body>
+</html>
